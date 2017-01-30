@@ -2,6 +2,7 @@ package gui13;
 
 import java.awt.EventQueue;
 
+import javax.swing.ButtonGroup;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.UIManager;
@@ -72,6 +73,13 @@ public class StreetLightControl extends JFrame {
 		
 		JRadioButton rdbtnOff = new JRadioButton("off");
 		pnControls.add(rdbtnOff, "cell 0 4");
+		
+		ButtonGroup bGroup = new ButtonGroup();
+		bGroup.add(rdbtnRed);
+		bGroup.add(rdbtnRY);
+		bGroup.add(rdbtnYellow);
+		bGroup.add(rdbtnGreen);
+		bGroup.add(rdbtnOff);
 	}
 
 }
