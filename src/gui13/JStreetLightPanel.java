@@ -22,7 +22,6 @@ public class JStreetLightPanel extends JPanel{
 	
 	@Override
 	protected void paintComponent(Graphics g) {
-		// TODO Auto-generated method stub
 		super.paintComponent(g);
 		setBackground(new Color(0, 80, 0));
 		switch (phase) {
@@ -35,6 +34,7 @@ public class JStreetLightPanel extends JPanel{
 			ctop = Color.red;
 			cmid = Color.gray;
 			cbot = Color.gray;
+			break;
 		case 2:
 			ctop = Color.red;
 			cmid = Color.orange;
@@ -46,7 +46,7 @@ public class JStreetLightPanel extends JPanel{
 			cbot = Color.green;
 			break;
 		case 4:
-			ctop = Color.red;
+			ctop = Color.gray;
 			cmid = Color.orange;
 			cbot = Color.gray;
 			break;
